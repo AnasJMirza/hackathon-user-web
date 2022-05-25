@@ -1,0 +1,31 @@
+.home-grid-body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-flexbox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item-card-margin{
+    margin-top: 10vh;
+}
+
+.card-item{
+    margin-top: 10vh;
+    /* transition: all 0.2s ease-in; */
+}
+
+.card-item:hover{
+    /* transform: scale(1.1); */
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}

@@ -1,0 +1,22 @@
+.items-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(161, 18, 47);
+
+    list-style: none;
+    /* border: 1px solid black; */
+    height: 6vh;
+
+    
+}
+
+.link{
+    text-decoration: none;
+}
+
+.items{
+    margin-left: 4vw;
+    color: white;
+    cursor: pointer;
+}

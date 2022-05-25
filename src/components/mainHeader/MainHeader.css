@@ -1,0 +1,23 @@
+.main-header-body{
+    /* background-color: rgb(36, 36, 36); */
+    
+    background-image: url('../../assets/images/mainHeader.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    border-bottom: 8px solid crimson;
+}
+
+
+.main-header-heading{
+    font-weight: 800;
+    font-size: 40px;
+    color: crimson;
+    position: absolute;
+    top: 250px;
+}
