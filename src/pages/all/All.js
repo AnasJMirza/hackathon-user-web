@@ -43,7 +43,7 @@ const All = () => {
     return (
         <div>
 
-            <MainHeader/>
+            {/* <MainHeader/> */}
             <div className='home-grid-body'>
 
             

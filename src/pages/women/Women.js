@@ -33,9 +33,9 @@ const Women = () => {
     return (
         <div className='women-body'>
             <div className='grid-body'>
-                <Grid container spacing={6} justifyContent="center">
+                <Grid container spacing={2}>
                     {womenProducts?.map((item)=>{
-                        return <Grid item>
+                        return <Grid item md={3}>
                             <ItemCard title={item.title} description={item.description} price={item.price} />
                         </Grid>
                             

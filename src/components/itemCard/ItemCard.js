@@ -31,7 +31,7 @@ export default function ItemCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="large" > {props.price} </Button>
+        <Button size="large" > ${props.price} </Button>
         <div className='order-now'>
             <Button size="large">Order Now</Button>
         </div>
