@@ -1,6 +1,8 @@
 import React from 'react';
+import './Men.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react';
+import { Grid } from '@mui/material';
 import ItemCard from '../../components/itemCard/ItemCard';
 import { fetchProducts } from '../../store/actions/ProductsAction';
 
@@ -10,13 +12,15 @@ const Men = () => {
     const menProducts = allProducts.filter(item => item.catagory == 'men')
 
     return (
-        <div>
-
+        <div className='men-body'> 
+            <Grid container spacing={2}>
                 {menProducts.map((item)=>{
-                    return <div className='card-item'>
+                    return <Grid item>
                         <ItemCard title={item.title} description={item.description} price={item.price} />
-                        </div>
+                    </Grid>
+                        
                 })}
+            </Grid>
                 
         </div>
     );
