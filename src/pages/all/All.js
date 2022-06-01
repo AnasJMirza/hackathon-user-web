@@ -27,8 +27,8 @@ const All = () => {
 
 
     const allProducts = useSelector((Store) => Store.ProductsReducer.products)
-    console.log("All Products from Store", allProducts);
-    console.log("All Products from Store", allProducts[0]);
+    console.log("All Products from Store admin web = ", allProducts);
+    // console.log("All Products from Store", allProducts[0]);
 
 
     if (loader) {
