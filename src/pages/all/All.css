@@ -19,13 +19,14 @@
     /* transition: all 0.2s ease-in; */
 }
 
-.card-item:hover{
-    /* transform: scale(1.1); */
-}
 
-.loader{
+.loading-screen{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 83vh;
+}
+
+.grid-body{
+    padding: 10vh 2vw;
 }

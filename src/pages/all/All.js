@@ -33,9 +33,9 @@ const All = () => {
 
     if (loader) {
         return (
-          <div className="loader">
-            <PropagateLoader color={"crimson"} size={20} />
-            {/* <PuffLoader color={"crimson"}  size={50} /> */}
+          <div className="loading-screen">
+            
+            <PuffLoader color={"crimson"}  size={60} />
           </div>
         );
       }
@@ -47,12 +47,15 @@ const All = () => {
             <div className='home-grid-body'>
 
             
-            
-                {allProducts.map((item)=>{
-                    return <div className='card-item'>
-                        <ItemCard title={item.title} description={item.description} price={item.price} />
-                        </div>
-                })}
+            <div className='grid-body'>
+              <Grid container spacing={2}>
+                  {allProducts.map((item)=>{
+                      return <Grid item md={3}>
+                              <ItemCard title={item.title} description={item.description} price={item.price} />
+                          </Grid>
+                  })}
+              </Grid>
+            </div>
 
             </div>
         </div>

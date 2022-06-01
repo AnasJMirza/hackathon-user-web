@@ -11,12 +11,10 @@
     
 }
 
-.link{
-    text-decoration: none;
-}
-
 .items{
+    text-decoration: none;
     margin-left: 4vw;
     color: white;
     cursor: pointer;
+    /* border: 1px solid black; */
 }
