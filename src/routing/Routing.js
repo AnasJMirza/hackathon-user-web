@@ -26,7 +26,7 @@ const Routing = () => {
                         <Route path='/women' element={<Women/>} />
                         <Route path='/kids' element={<Kids/>} />
                         <Route path='/accessories' element={<Accessories/>} />
-                        {/* <Route path='/accessories' element={<Signin/>} /> */}
+                        
                         
                     </Routes>
             </BrowserRouter>
