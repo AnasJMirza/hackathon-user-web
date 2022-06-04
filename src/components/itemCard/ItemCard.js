@@ -22,8 +22,8 @@ export default function ItemCard(props) {
         image={M1}
         alt={props.title}
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+      <CardContent sx={{ height: 145 }}>
+        <Typography  gutterBottom variant="h5" component="div">
           {props.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
