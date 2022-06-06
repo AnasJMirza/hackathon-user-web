@@ -19,7 +19,7 @@ export default function ItemCard(props) {
       <CardMedia
         component="img"
         height="140"
-        image={M1}
+        image={props.imgURL}
         alt={props.title}
       />
       <CardContent sx={{ height: 145 }}>

@@ -9,21 +9,9 @@ import PropagateLoader from 'react-spinners/PropagateLoader'
 import { PuffLoader } from 'react-spinners';
 import MainHeader from '../../components/mainHeader/MainHeader';
 
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
 
 
 const All = () => {
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
     
     const [loader, setLoader] = useState(false)
 
@@ -65,40 +53,14 @@ const All = () => {
               <Grid container spacing={2}>
                   {allProducts.map((item)=>{
                       return <Grid item md={3}>
-                              <ItemCard title={item.title} description={item.description} price={item.price} />
+                              <ItemCard title={item.title} description={item.description} price={item.price} imgURL={"https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"}/>
                           </Grid>
                   })}
               </Grid>
             </div>
 
             </div>
-
-
-
-            <div>
-        <h2> Single Item</h2>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
           </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-      </div>
-        </div>
     );
 };
 
