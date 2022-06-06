@@ -53,7 +53,7 @@ const All = () => {
               <Grid container spacing={2}>
                   {allProducts.map((item)=>{
                       return <Grid item md={3}>
-                              <ItemCard title={item.title} description={item.description} price={item.price} imgURL={"https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"}/>
+                              <ItemCard title={item.title} description={item.description} price={item.price} imgURL={item.url}/>
                           </Grid>
                   })}
               </Grid>
