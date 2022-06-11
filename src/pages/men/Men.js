@@ -36,7 +36,7 @@ const Men = () => {
                 <Grid container spacing={2}>
                     {menProducts?.map((item)=>{
                         return <Grid item md={3}>
-                            <ItemCard title={item.title} description={item.description} price={item.price} />
+                            <ItemCard title={item.title} description={item.description} price={item.price} imgURL={item.url}/>
                         </Grid>
                             
                     })}
